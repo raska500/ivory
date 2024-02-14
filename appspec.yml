@@ -1,0 +1,8 @@
+version: 0.0
+os: windows
+
+hooks:
+  AfterInstall:
+    - location: scripts/test.ps1
+      timeout: 300
+      runas: Administrator
